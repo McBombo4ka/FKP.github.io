@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script/script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @font-face {
+	font-family: "Montserrat_Alternates"; 
+	src: url("fonts/Montserrat_Alternates.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+	} 
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0px;
+	background-color: rgb(1, 159, 98);
+	background-image: url(123.png);
+	scroll-behavior: smooth;
+}
+#footer {
+    height: 100px;
+    color: white;
+    background-color: black;
+}
+#wrapper {
+	
+}
+#header {
+	position: relative;
+	font-weight: bold;
+	/*background-image: linear-gradient(to bottom right, rgb(236, 201, 73),rgb(240, 193, 40));*/
+	margin: 0;
+	width: 70%;
+	height: 80px;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 20px;
+	padding: 20px;
+	background: rgb(55, 0, 0);
+	border: solid 3px rgb(248, 143, 143);
+
+	border-radius: 50px;
+	z-index: 1;
+}
+#sidebar {
+    font-size: 20px;
+}
+#container {
+	display: flex;
+}
+#content {
+	margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+	width: 85%;
+	padding: 20px;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	font-family: "Montserrat_Alternates"; 
+}
+#backgr {
+	padding: 20px;
+	margin-bottom: 40px;
+	background-color: rgba(15, 0, 0, 0.949);
+	border-radius: 40px;
+}
+.forimg {
+	float: left;
+	margin-right: 5px;
+}
+
+#menu {
+	display: flex;
+}
+#menu a {
+	display: block;
+	font-family: "Montserrat_Alternates"; 
+	text-decoration: none;
+	margin-right: 0px;
+	padding: 10px;
+	color: rgb(255, 255, 255);
+}
+.btn {
+	background-color: rgb(19,19,19);
+	border: rgb(19,19,19);
+	opacity: 100%; 
+	width: 1040px; 
+    height: 140px; 
+	font-size: 40px;
+	font-family: "Doom";
+	color: white;
+	font-weight: bold;
+	border-radius: 40px;
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 0;
+}
+
+#menu a:hover, #menu a.active {
+	color: rgb(237, 67, 141);
+    -webkit-transition: all;	
+    -webkit-transition-duration: 000ms;
+}
+
+li {
+	margin-bottom: 5px;
+}
+#drop-down-child {
+    display: none;
+	position: absolute;
+    background: rgb(36, 36, 36);
+}	
+#drop-down a{
+    display: block;
+	
+}
+#drop-down:hover #drop-down-child{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	float:none;
+	display:block;
+	position: relative;
+}
+
+
+
+.adaptivny-slayder {
+    position: relative;
+	max-width: 100%;
+    margin: 50px auto;
+  }
+  
+  .adaptivny-slayder input[name="kadoves"] {
+    display: none;
+  }
+  
+  .kadoves {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .kadoves label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin: 0 3px;
+    border-radius: 50%;
+    border: 2px solid #ff5ecf;
+    background-color: #b70031;
+  }
+  
+  #slaid1:checked~.kadoves label[for="slaid1"] {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #slaid2:checked~.kadoves label[for="slaid2"] {
+    background-color: white;
+  }
+  
+  #slaid3:checked~.kadoves label[for="slaid3"] {
+    background-color: white;
+  }
+  #slaid4:checked~.kadoves label[for="slaid4"] {
+    background-color: white;
+  }
+  #slaid5:checked~.kadoves label[for="slaid5"] {
+    background-color: white;
+  }
+  #slaid6:checked~.kadoves label[for="slaid6"] {
+    background-color: white;
+  }
+  #slaid7:checked~.kadoves label[for="slaid7"] {
+    background-color: white;
+  }
+  .adaptivny-slayder-lasekun {
+    overflow: hidden;
+     
+  }
+  
+  .abusteku-deagulus {
+    display: flex;
+    
+    transition: all 0.5s;
+  }
+  
+  .abusteku-deagulus img {
+    width: 100%;
+    flex-shrink:0;
+  }
+  
+  #slaid1:checked~adaptivny-slayder-lasekun abusteku-deagulus {
+    transform: translate(0);
+  }
+  
+  #slaid2:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+    transform: translateX(-100%);
+  }
+  
+  #slaid3:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+    transform: translateX(-200%);
+  }
+  #slaid4:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+    transform: translateX(-305%);
+  }
+  #slaid5:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+    transform: translateX(-410%);
+  }
+  #slaid6:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+    transform: translateX(-500%);
+  }
+  #slaid7:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+    transform: translateX(-600%);
+  }
+    </style>
+    <div id="header">
+        <div id="menu"> <!--Fluffy Kitten Purred-->
+            <a href="GameHerald.html">Fluffy Kitten Purred</a>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="container">
+            <div id="content">
+                <div id="backgr">
+                    <p>
+                        Приветствую тебя, прекрасное создание, на моём
+                        подобие сайта с поздравлением ко Дню Рождения!
+                        <img src="" style="display: block;
+                 margin: auto; box-shadow: 0px 0px 80px rgb(21, 108, 138);">
+                    </p>
+                    <p>
+                        Как и все обычные обыватели нашей планеты желаю тебе
+                        только лучшего, я уверен, что всё у тебя получится в этой
+                        жизни, и ничто тебя не сможет остановить, даже мелкие тараканы,
+                        ведь они не смогут понять силу твоей решительности жизни. Ты 
+                        удивительный человек и это факт, который невозможно опровергнуть.
+                        Да и вообще, ты видишь этих котиков с музычкой? Я уверен, что и они
+                        будут верить и поддерживать весь твой путь.
+                    </p>
+                    <p>
+                        Очень надеюсь, что этот восемнадцатый День Рождения Вероники будет
+                        одним из наилучших (если я конечно не заболел и 
+                        пришёл. Лишь бы я не облажался..) и проведём его так, будто живём 
+                        последний день.
+                    </p>
+                    
+                </div>
+                <div id="backgr"">
+                    <p>
+                        Если этот утырок(я) не подарил серень, то сильно не обежайся,
+                        уверен, что на то были причины.
+                    </p>
+                    <p>
+                        Но не будем о плохом. Начнём пожалуй наши приключения дальше.
+                    </p>
+                    <p>
+                        
+                    </p>
+                    
+                </div>
+                
+                <div id="backgr" style="height: 420px;">
+                    <img src="12.png" style="float:left; width: 22.7%; ; ">
+                    <p style="margin-left: 24%; ">
+                        Если ты не помнишь, то мы уже отмечали твоё День Рождение.
+                        Видишь там цифорку 18? Ну вот, не мне же восемнадцать исполняется,
+                        так что вот, у меня есть все пруфы. Думаешь нарисованно? Думай, как 
+                        хочешь, но у меня только такой оригинал есть и никакой более. 
+                    </p>
+                    <p style="margin-left: 24%;">
+                        Остальные фотографии это уже не из нашей реальности значит. Хотя если так подумать,
+                        как мы тогда будет отмечать его уже во второй раз... Это что получается,
+                        я из другой реальности?!? 
+                    </p>
+                    <p style="margin-left: 24%;">
+                        Пиздец.
+                    </p>
+                    <p style="margin-left: 24%;">
+                        Значит наслаждайся тем, что где-то там, когда-то там, мы хорошо
+                        провели время. Уверен, что там было хорошо, ведь я там был, а ты нет ахахахах.
+                    </p>
+                    <p style="margin-left: 24%;">
+                        Ладно, щас я найду что-то уже из этого мира. Тааак...
+                    </p>
+                </div>
+                <div id="backgr" style="margin-bottom: 0px;">
+                    <p>Во, вроде это уже из вашей реальности Земли, C-137. Я хочу, чтобы ты всегда помнила,
+                    что ты не одна в этой реальности, и тебе не обязательно всё нести на себе. У тебя 
+                    существует невероятного количество друзей, с которым может ты не можешь поделится
+                    прям таки сокровенным, но знай, что одну мы тебя точно не оставим, готовы поднять 
+                    настроение или обозвать мудака мудоком, из-за которого ты грустишь (ни на кого
+                    пальцем не показываем, ладно?) и будем его гнобить, пока ты не улыбнёшься и не
+                    согласишься с нами, ведь так оно и есть. Да пусть он будет сто раз прав, мы его
+                    как по бошьке боньк и всё, пусть лежит, нам важно, чтобы у тебя было хорошее настроение,
+                    а что уже с его здоровьем пусть пекутся его же врачи хе-хе.
+                </p>
+                    <p>
+                        Понесло меня чутка, но ничего, думаю суть ты поняла. Бери от жизни всё и мы
+                        тебе в этом поможем.
+                    </p>
+                    <div class="adaptivny-slayder">
+                        <input type="radio" name="kadoves" id="slaid1" checked>
+                        <input type="radio" name="kadoves" id="slaid2">
+                        <input type="radio" name="kadoves" id="slaid3">
+                        <input type="radio" name="kadoves" id="slaid4">
+                        <input type="radio" name="kadoves" id="slaid5">
+                        <input type="radio" name="kadoves" id="slaid6">
+                        <input type="radio" name="kadoves" id="slaid7">
+                         
+                        <div class="kadoves">
+                        <label for="slaid1"></label>
+                        <label for="slaid2"></label>
+                        <label for="slaid3"></label>
+                        <label for="slaid4"></label>
+                        <label for="slaid5"></label>
+                        <label for="slaid6"></label>
+                        <label for="slaid7"></label>
+                        </div>
+                         
+                        <div class="adaptivny-slayder-lasekun">
+                        <div class="abusteku-deagulus">
+                        <img src="1.jpg" style="width:700px; height:500px; margin-right: 60%; margin-left:20%;"/>
+                        <img src="3.jpg" style="width:300px; height:500px; margin-right: 58%; "/>
+                        <img src="2.jpg" style="width:700px; height:500px; margin-right: 32%; "/>
+                        <img src="4.jpg" style="width:500px; height:500px;"/>
+                        <img src="5.jpg" style="width:600px; height:500px; margin-right: 25%; "/>
+                        <img src="6.jpg" style="width:800px; height:500px; margin-right: 45%; "/>
+                        <img src="7.jpg" style="width:300px; height:500px; margin-right: 76%; "/>
+                        <img src="8.jpg" style="width:300px; height:500px; margin-right: 70%; "/>
+                        </div>
+                        </div>
+                      </div>
+
+                </div>
+                <div id="backgr" style="margin-top: 40px;">
+                    nfr nfr nfr
+                </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div id="footer">
+            footer
+        </div>
+    </div>
+</body>
+</html>
